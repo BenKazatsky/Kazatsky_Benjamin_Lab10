@@ -112,7 +112,8 @@ public class SafeInput {
         String retString = "";
         boolean done = false;
         do {
-            out.print("\n" + prompt + " RegEx: " + regEx + ": ");
+            // MODIFIED: Removed the " RegEx: " + regEx + ":" part
+            out.print("\n" + prompt + " ");
             retString = pipe.nextLine();
             if (retString.matches(regEx)) {
                 done = true;
